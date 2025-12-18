@@ -33,5 +33,12 @@ ustr = { version = "1.1.0"}
 triomphe = { version = "0.1"}
 parking_lot = { version = "*", features = ["send_guard"]}
 
+[dev-dependencies]
+criterion = { package = "codspeed-criterion-compat", version = "4.1.0" }
+
+[[bench]]
+name = "resolver_benchmark"
+harness = false
+
 [lints]
 workspace = true
